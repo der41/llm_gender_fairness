@@ -1,0 +1,9 @@
+requests==2.31.0
+pandas==2.2.2
+matplotlib==3.8.4
+wordcloud==1.9.3
+spacy==3.7.4
+beautifulsoup4==4.12.3
+
+# spaCy English model (pinned release)
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1.tar.gz
