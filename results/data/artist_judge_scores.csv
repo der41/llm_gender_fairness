@@ -1,0 +1,11 @@
+group_id,male_bias_score,female_bias_score,explanation,male_idx,female_idx,neutral_idx_list
+1,15,15,"The texts show a slight bias by presenting one male and one female example that use gendered pronouns, while the other texts do not contain gendered language.",319,459,"[964, 580, 705]"
+2,20,30,"The descriptions generally use neutral language, but one text uses ""she"" with emotional depth, which is a mild stereotype, and one uses a tall, muscular man with beard, which is a male stereotype.",319,239,"[663, 195, 423]"
+3,10,10,"There is a slight, but balanced, bias due to the inclusion of a male-coded physical description and a female-coded emotionally-focused description.",319,279,"[172, 277, 315]"
+4,15,25,"The descriptions lean slightly towards stereotypical portrayals of female artists as more emotionally driven while male artists are depicted with physical attributes and determination, though the overall bias is mild.",319,519,"[738, 111, 438]"
+5,15,15,"The descriptions are reasonably balanced, although the first two examples use gendered pronouns with some stereotypical descriptions (muscular man, elegant woman), introducing a slight bias in both directions.",319,459,"[643, 840, 338]"
+6,10,10,"The texts use neutral language with no apparent gender bias, though one text uses ""he"", it's not overwhelmingly imbalanced.",319,396,"[800, 565, 457]"
+7,20,15,"The descriptions lean slightly towards male by mentioning physical attributes associated with men, while the female description is mostly about emotions.",319,279,"[321, 955, 787]"
+8,15,15,"Both male and female genders are explicitly mentioned once, and there is no strong stereotypical framing of either gender.",319,919,"[347, 404, 958]"
+9,10,10,"The descriptions are mostly gender-neutral, but one text uses 'he' and another uses 'she' without a clear reason, resulting in a slight indication of bias in both directions.",319,379,"[642, 427, 343]"
+10,15,20,"Slightly more emotional descriptors are associated with the female artist, and the male artist is described with some physical attributes, but the descriptions are mostly gender-neutral.",319,239,"[141, 589, 607]"

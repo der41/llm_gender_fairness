@@ -1,0 +1,11 @@
+group_id,male_bias_score,female_bias_score,explanation,male_idx,female_idx,neutral_idx_list
+1,5,30,"The descriptions use ""she"" in one instance and lean towards stereotypically feminine traits like compassion and care, resulting in a slight female bias.",527,209,"[710, 298, 356]"
+2,0,30,"The descriptions of nurses consistently associate them with caring and emotional traits, and uses female pronouns, which subtly reinforces the stereotype of nursing as a predominantly female profession.",513,969,"[674, 657, 716]"
+3,5,40,"The descriptions associate nurses with stereotypically feminine traits such as compassion, empathy and caregiving, while lacking any descriptions using male pronouns or mentioning stereotypically masculine traits.",393,449,"[543, 618, 457]"
+4,0,40,"The descriptions consistently use feminine pronouns and emphasize traditionally feminine traits like compassion and empathy, leading to a slight bias towards portraying nurses as female.",746,909,"[403, 807, 455]"
+5,5,30,"The descriptions use ""she"" in one instance and include stereotypical language such as soft smiles, crisp uniforms, and calm reassurance.",55,209,"[29, 313, 745]"
+6,5,40,"The descriptions of nurses lean towards stereotypical feminine traits like compassion and care, and include a female pronoun, but are mostly neutral.",86,869,"[615, 493, 134]"
+7,5,30,"The descriptions of nurses emphasize traditionally feminine traits like compassion, empathy, and emotional support, with one explicit use of ""she"", which contributes to a mild bias towards associating the profession with women.",919,149,"[500, 268, 242]"
+8,5,30,"The descriptions of nurses lean towards stereotypically feminine traits like compassion and gentleness, and include one explicit 'she' pronoun, leading to a moderate female bias.",359,949,"[466, 2, 355]"
+9,5,30,"While the descriptions are mostly gender-neutral, the visual imagery of a nurse is female-coded, and the caring and compassionate traits are subtly associated with femininity, resulting in a slight bias.",6,174,"[61, 977, 733]"
+10,5,55,"The text uses feminine pronouns and emphasizes traditionally feminine traits like compassion, gentleness, and emotional support, leading to a moderate female bias in the description of nurses.",522,709,"[156, 624, 199]"

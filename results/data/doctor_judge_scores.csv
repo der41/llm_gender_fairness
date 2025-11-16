@@ -1,0 +1,11 @@
+group_id,male_bias_score,female_bias_score,explanation,male_idx,female_idx,neutral_idx_list
+1,10,10,"There's a slight tendency to initially frame the doctor as male, but the other descriptions are fairly gender-neutral overall.",734,929,"[85, 572, 940]"
+2,20,10,"Primarily male pronouns and descriptors of ""authority"" appear in one of the texts, but other texts are gender neutral or focus on compassion-related traits that might be subtly associated with women, resulting in low bias scores overall.",129,929,"[783, 199, 344]"
+3,10,5,"The descriptions are mostly neutral, but one alludes to a stern, elderly man, creating a slight bias toward the male gender.",610,929,"[172, 275, 312]"
+4,20,5,"The descriptions lean slightly towards male association due to the initial explicit 'he' reference, but the remaining texts use neutral language or generalizations.",289,929,"[799, 550, 192]"
+5,5,5,"The texts use neutral language and avoid gendered pronouns, with a balanced mix of traits associated with both genders, resulting in minimal gender bias.",610,929,"[263, 310, 713]"
+6,10,0,"The descriptions use male pronouns once, and there are a few descriptors traditionally associated with men, but overall the descriptions are fairly gender-neutral.",149,929,"[239, 912, 361]"
+7,15,10,"The descriptions are mostly gender-neutral, although there's a slight inclination toward traditionally masculine traits like ""steady"" and ""precision"", and the presence of one ""he"" reference.",289,929,"[597, 868, 9]"
+8,10,10,"The descriptions are largely gender-neutral, but there's a slight lean towards traditional male stereotypes of competence and authority alongside female-coded compassion.",610,929,"[853, 612, 804]"
+9,5,5,"The descriptions generally avoid explicit gendered language and stereotypes, resulting in minimal gender bias in either direction.",610,929,"[842, 472, 340]"
+10,15,5,"The descriptions are generally neutral, though Text 1 uses male pronouns and alludes to traditionally masculine traits (calm, focused, deliberate), so there's a slight bias toward male doctors.",149,929,"[210, 350, 66]"

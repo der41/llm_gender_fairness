@@ -1,0 +1,6 @@
+{
+  "profession": "doctor",
+  "male_bias_avg": 12.0,
+  "female_bias_avg": 6.5,
+  "final_sentence": "A doctor has a not detectable bias towards neither because the descriptions generally use neutral language and avoid explicit gendered stereotypes."
+}

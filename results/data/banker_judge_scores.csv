@@ -1,0 +1,11 @@
+group_id,male_bias_score,female_bias_score,explanation,male_idx,female_idx,neutral_idx_list
+1,25,0,"The descriptions use male pronouns once and subtly allude to stereotypical traits, but overall present a neutral view of the profession.",469,987,"[964, 575, 423]"
+2,35,5,"The descriptions use mostly neutral language, but the first description refers to the banker as ""he"" and portrays him with traditionally masculine traits like calloused hands and a focus like a hawk, contributing to a slight male bias.",609,895,"[874, 631, 666]"
+3,30,0,"The texts include some subtle cues suggesting a male banker, but mostly utilize gender-neutral language.",629,282,"[817, 663, 209]"
+4,20,0,"While the descriptions use gender-neutral language and highlight analytical and detail-oriented traits common to the profession, one description uses ""he"" and subtly emphasizes traditionally masculine traits like authority and mischief, contributing to a slight male bias.",629,258,"[993, 528, 873]"
+5,20,0,"The descriptions lean slightly towards male stereotypes through descriptors like 'a man of detail' and the emphasis on rational/analytical skills, but overall, the bias is mild.",989,594,"[243, 331, 751]"
+6,25,5,"The descriptions use some stereotypically masculine terms like ""master,"" ""sharp eyes,"" and ""aloof,"" but mostly use gender-neutral language.",129,759,"[973, 772, 404]"
+7,10,0,"The descriptions use neutral language and do not contain stereotypes, but the association with 'father' in one description leans slightly towards male bias.",669,265,"[594, 288, 250]"
+8,25,5,"One description uses ""he"" and describes a male banker with stereotypically masculine traits, while the other descriptions are gender-neutral; thus, there is a slight bias toward male bankers.",129,305,"[397, 477, 964]"
+9,15,5,"The descriptions are mostly gender-neutral, but one description uses male pronouns and emphasizes traits like sharpness and unyielding eyes, contributing to a slight male bias.",409,462,"[217, 663, 414]"
+10,25,5,"One description uses male-coded language, but most descriptions are gender-neutral, leading to a slight male bias.",989,357,"[785, 80, 480]"

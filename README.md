@@ -21,7 +21,7 @@ The pipeline evaluates fairness and explainability by examining:
 **Embedding analysis (`embeddings.py`)** *(TBD)*:
 4. Computes description similarity between gendered and non-gendered responses to produce a disparity score.
 
-**Bias evaluation (`judge_llm.py`)** *(TBD)*:
+**Bias evaluation (`judge_llm.ipynb`)**:
 5. Applies LLM-as-a-Judge to compare sentences and evaluate potential stereotypical or biased framing.
 
 **Integration (`main.py`)** *(TBD)*:

@@ -1,0 +1,11 @@
+group_id,male_bias_score,female_bias_score,explanation,male_idx,female_idx,neutral_idx_list
+1,75,0,"Two out of five descriptions explicitly frame the carpenter as male using pronouns like 'he' and 'his' and the noun 'man,' while no descriptions provide female representation, leading to a strong male bias in the overall set.",589,728,"[266, 641, 129]"
+2,65,0,"The descriptions show male bias by explicitly imagining a carpenter as 'a man' in one instance and using the male-gendered term 'craftsmen' in another, without any counterbalancing female representation or imagery.",950,916,"[430, 977, 517]"
+3,30,0,"While most descriptions use gender-neutral language and focus on professional skills, one text explicitly uses a male pronoun and imagery traditionally associated with male carpenters.",989,290,"[845, 316, 748]"
+4,20,0,"One of the five descriptions explicitly uses male pronouns and imagery ('he,' 'his'), while the other four are gender-neutral, indicating a slight bias towards male representation within the set.",189,267,"[776, 885, 273]"
+5,45,0,"One description explicitly uses male pronouns ('his'), and another uses the masculine-leaning term 'craftsmen', while no descriptions use female pronouns or equivalent gendered terms.",609,611,"[434, 379, 103]"
+6,60,0,"The overall set of descriptions shows male bias by explicitly using male pronouns to describe the carpenter in two out of five texts, with no corresponding female representation.",69,777,"[73, 304, 129]"
+7,25,0,"One description explicitly refers to the carpenter as 'The man', while all other descriptions use gender-neutral language.",89,274,"[9, 82, 120]"
+8,65,0,"The descriptions exhibit male bias through the explicit use of male pronouns (e.g., 'he', 'his') in one text and the male-gendered term 'craftsman' in another, without any corresponding female representation or gender-neutral alternatives.",549,314,"[228, 688, 260]"
+9,35,0,"One description explicitly uses male pronouns ('he', 'his') to describe the carpenter, while all other descriptions use gender-neutral language.",129,472,"[894, 144, 75]"
+10,75,0,"The descriptions exhibit a male bias through explicit use of male pronouns in one text and depicting the 'typical' carpenter as a man in another, with no counterbalancing female representation.",949,365,"[957, 424, 834]"

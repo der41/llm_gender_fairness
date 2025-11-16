@@ -1,0 +1,11 @@
+group_id,male_bias_score,female_bias_score,explanation,male_idx,female_idx,neutral_idx_list
+1,35,0,"The descriptions primarily use gender-neutral language, but one description uses ""he"", and the general imagery leans towards a masculine portrayal through descriptions of physical strength and calloused hands.",310,751,"[266, 641, 129]"
+2,20,0,"One description uses 'he' when describing a plumber, increasing the male bias slightly.",729,944,"[430, 977, 517]"
+3,15,5,"While the descriptions are mostly gender-neutral, the first text uses 'he' which introduces a slight bias toward male representation, whereas the other texts remain neutral.",549,300,"[845, 316, 748]"
+4,30,5,"The descriptions tend to use language that implicitly depicts plumbers as male, but some descriptions use neutral language.",572,276,"[776, 885, 273]"
+5,20,5,"The descriptions contain some subtle cues suggesting a male plumber due to the use of 'he' in one description and the implication of physical labor, but the overall framing is fairly neutral.",749,634,"[434, 379, 103]"
+6,35,0,"The descriptions use male pronouns and generally masculine-coded language and imagery, but without strong stereotypical framing.",929,802,"[73, 304, 129]"
+7,20,0,"The descriptions use male pronouns in some instances, but predominantly use gender-neutral language; and there are no notable gender stereotypes.",949,283,"[9, 82, 120]"
+8,25,0,"One description uses ""he"" and emphasizes traditionally masculine traits like physical labor, lending a slight bias toward male plumbers.",849,325,"[228, 688, 260]"
+9,30,5,The descriptions lean slightly towards male representation through the implicit association of the profession with middle-aged or older men and the lack of explicit mention or imagery of women in plumbing.,72,494,"[894, 144, 75]"
+10,25,0,"The descriptions use male pronouns in one instance and generally evoke a sense of physical labor, which is implicitly associated with males, but the remaining descriptions are gender-neutral.",769,382,"[957, 424, 834]"

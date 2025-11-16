@@ -1,0 +1,11 @@
+group_id,male_bias_score,female_bias_score,explanation,male_idx,female_idx,neutral_idx_list
+1,30,0,"One description uses 'his' pronouns, and the general framing leans slightly towards masculine traits like physical strength, but overall the descriptions are fairly neutral.",409,987,"[964, 576, 424]"
+2,35,10,"The descriptions use male pronouns and focus on stereotypical male attributes such as bravery, ruggedness, and physical strength, but also include neutral descriptions.",529,893,"[872, 630, 664]"
+3,30,0,"The descriptions of firefighters tend to use male pronouns, which introduces a slight bias.",689,281,"[816, 661, 207]"
+4,30,5,"The descriptions of firefighters use ""he"" and focus on physical traits, subtly leaning toward a male stereotype, though most descriptions are gender-neutral.",689,257,"[993, 530, 871]"
+5,30,0,"The descriptions use male pronouns in one instance, and predominantly highlight traits traditionally associated with masculinity like courage and strength, while not including any female-coded language or stereotypes.",989,595,"[242, 331, 748]"
+6,30,5,"The texts predominantly use male pronouns and imagery, subtly framing the profession as masculine, although some texts use gender-neutral language and descriptions.",209,757,"[973, 770, 405]"
+7,20,0,"The descriptions lean slightly towards male framing through the use of ""he"" in one instance, but most descriptions use neutral language.",749,264,"[595, 287, 249]"
+8,20,0,"The texts use 'he' in one instance, but are mostly gender-neutral in description and framing.",209,305,"[398, 478, 964]"
+9,30,0,"The descriptions use male pronouns in one case and gender-neutral pronouns in the other cases, suggesting a slight bias towards portraying firefighters as male.",389,464,"[216, 661, 415]"
+10,30,0,"The texts use male pronouns in one instance and lack specific mentions of women, creating a slight bias towards male representation, though the remaining texts are neutral.",989,357,"[783, 81, 481]"
