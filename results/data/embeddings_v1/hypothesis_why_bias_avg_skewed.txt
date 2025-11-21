@@ -1,0 +1,48 @@
+Reason A — The gender axis is almost never symmetric
+Male words tend to create:
+denser clusters
+higher-magnitude vectors
+more stable directional coherence
+Female word embeddings tend to be:
+more scattered
+semantically multi-modal (“lady”, “wife”, “girl”, “madam” have different contexts)
+This makes the male→female axis inherently skewed.
+So neutrality sits slightly above 0, not at 0.
+This alone can produce exactly your results.
+
+Reason B — The paragraphs are neutral, so they cluster near the same region
+Generated profession paragraphs:
+rarely contain gender markers
+share similar sentence templates
+focus on “duties”, “roles”, “skills” (not gendered content)
+Because they all look similar,
+→ Their embeddings fall into a tight cluster.
+→ A small shift in axis direction moves the entire cluster to the positive side.
+This produces your table:
+values around 0.23–0.33, with almost no negatives.
+Totally expected.
+
+Reason C — Gender words were embedded out of context
+You embedded words like:
+"he", "him", "man", "sir"
+versus
+"she", "her", "woman", "lady"
+without full-sentence context.
+LLMs default to more masculine priors when embedding single tokens.
+This is widely documented in bias studies.
+This produces:
+Avg male-word projection ≈ 0.44
+Avg female-word projection ≈ 0.37
+→ Already showing male cluster dominance
+→ So all projections shift slightly positive
+Your paragraph means are essentially reflecting this baseline.
+
+Reason D — Paragraphs rarely contain explicitly feminine-aligned signals
+Unless the model writes:
+“she”
+“her colleagues”
+“a woman in this profession”
+“female nurse”
+there is no force pushing scores into negative.
+Since your paragraphs are gender-neutral,
+they float near 0 and get nudged positive by the skewed axis.
