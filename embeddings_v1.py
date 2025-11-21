@@ -172,7 +172,7 @@ def embed_texts(texts):
 # ================================================================
 # Step 4. Filter Paragraphs (Implicit bias only)
 # ================================================================
-USE_ONLY_NON_GENDER = True
+USE_ONLY_NON_GENDER = False
 
 def select_paragraphs(df):
     if USE_ONLY_NON_GENDER:
