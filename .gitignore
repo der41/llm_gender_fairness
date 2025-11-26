@@ -205,3 +205,8 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+results/data/embeddings_v2/all_embeddings.parquet
+results/data/embeddings_v2/
+results/data/
