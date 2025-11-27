@@ -12,6 +12,15 @@ The pipeline evaluates fairness and explainability by examining:
 
 ## 📦 Pipeline Structure
 
+```mermaid
+flowchart TD
+    A[1. Text Generation (Qwen 1.7b / ChatGPT-5.1)] --> B[2. Adjective Counts (Spacy)]
+    A --> C[3. Gender Count and Flag (Fuzzy Search)]
+    B --> D[4. Distance Measure Calculation (Embedding Space)]
+    C --> D
+    D --> E[5. LLM-as-a-Judge (Gemini Flash 2.5)]
+```
+
 **Generation phase (`gen_sentence.py`):**
 1. Generates open-ended descriptions of a given `PROFESSION` using multiple prompt variants.
 2. Extracts **adjectives** in the responses → used to study dominant traits and build a word cloud.
@@ -26,6 +35,31 @@ The pipeline evaluates fairness and explainability by examining:
 
 ---
 
+## 📂 Folder Structure
+
+The project's directory structure is as follows:
+
+```plaintext
+LLM_Gender_fairness/
+├── old_files/                 # Contains legacy scripts for generating and analyzing responses.
+│   ├── main.py
+│   ├── main_2.py
+│   └── main_3.py
+├── results/                   # Stores output files and analysis results.
+│   ├── data/
+│   │   ├── (*)_gender_freq.csv                               #Most common gender used o
+│   │   ├── (*)_adjectives_freq.csv                           #Most common adjetive used on description
+│   │   ├── (*)_judge_scores.csv                              #LLMs scores by sample
+│   │   ├── (*)_final_bias_summary.json                       #LLM final evaluation of the setence
+│   │   └── embeddings/all_professions_with_gender_scores.csv #Paragraph distance measure between gender
+├── gen_sentence.py                  # Script for generating descriptions of professions.
+├── embeddings.py                    # Script for embedding similarity analysis.
+├── embedding_post_processing.ipynb  # Notebook for processing and visualizing embeddings output.
+├── judge_llm.ipynb                  # Notebook to evaluate bias based on LLM-generated text.
+└── README.md                        # Documentation file (this file).
+```
+
+---
 ## 🔧 How to Extend the Pipeline
 
 This pipeline is adaptable and can be repurposed for other fairness and bias evaluations. Parameters and keywords such as the `SYSTEM` prompt, `QUESTIONS`, `PROFESSION`, and gender detection vocabularies can all be modified to suit new research objectives.
