@@ -14,11 +14,12 @@ The pipeline evaluates fairness and explainability by examining:
 
 ```mermaid
 flowchart TD
-    A[1. Text Generation (Qwen 1.7b / ChatGPT-5.1)] --> B[2. Adjective Counts (Spacy)]
-    A --> C[3. Gender Count and Flag (Fuzzy Search)]
-    B --> D[4. Distance Measure Calculation (Embedding Space)]
+    A[1. Text Generation - Qwen 1.7b / ChatGPT-5.1] --> B[2. Adjective Counts - Spacy]
+    A --> C[3. Gender Count and Flag - Fuzzy Search]
+    B --> D[4. Distance Measure Calculation - Embedding Space]
     C --> D
-    D --> E[5. LLM-as-a-Judge (Gemini Flash 2.5)]
+    D --> E[5. LLM-as-a-Judge - Gemini Flash 2.5]
+    
 ```
 
 **Generation phase (`gen_sentence.py`):**
