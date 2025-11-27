@@ -12,6 +12,15 @@ The pipeline evaluates fairness and explainability by examining:
 
 ## 📦 Pipeline Structure
 
+```mermaid
+flowchart TD
+    A[1. Text Generation] --> B[2. Adjective Counts]
+    A --> C[3. Gender Count and Flag]
+    B --> D[4. Distance Measure Calculation]
+    C --> D
+    D --> E[5. LLM-as-a-Judge]
+```
+
 **Generation phase (`gen_sentence.py`):**
 1. Generates open-ended descriptions of a given `PROFESSION` using multiple prompt variants.
 2. Extracts **adjectives** in the responses → used to study dominant traits and build a word cloud.
