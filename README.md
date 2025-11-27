@@ -24,31 +24,85 @@ The pipeline evaluates fairness and explainability by examining:
 **Bias evaluation (`judge_llm.ipynb`)**:
 5. Applies LLM-as-a-Judge to compare sentences and evaluate potential stereotypical or biased framing.
 
-**Integration (`main.py`)** *(TBD)*:
-6. Aggregates metrics and visualizations to enhance explainability (XAI) around the likelihood of bias in generated language.
 ---
 
-## 🔧 Extending the Pipeline
+## 🔧 How to Extend the Pipeline
 
-This pipeline can be applied to other fairness evaluations by modifying:
-- `SYSTEM` prompt
-- `QUESTIONS`
-- `PROFESSION`
-- Gender detection keywords
+This pipeline is adaptable and can be repurposed for other fairness and bias evaluations. Parameters and keywords such as the `SYSTEM` prompt, `QUESTIONS`, `PROFESSION`, and gender detection vocabularies can all be modified to suit new research objectives.
 
 ---
 
-## 🛠 Installation
+## 🛠 Installation & Setup
 
-### 1) Create and activate a virtual environment
+Ensure to follow these steps to set up the pipeline and dependencies:
+
+### 1) Clone the Repository
+
+```bash
+git clone https://github.com/der41/LLM_Gender_fairness.git
+cd LLM_Gender_fairness
+```
+
+### 2) Create and Activate a Virtual Environment
+
+For macOS/Linux:
 ```bash
 python3 -m venv venv
-source venv/bin/activate        # macOS / Linux
-venv\Scripts\activate           # Windows
+source venv/bin/activate
 ```
+
+For Windows:
+```bash
+python3 -m venv venv
+venv\Scripts\activate
+```
+
+### 3) Install the Required Packages
+
+Install the dependencies listed in `requirements.txt` or manually ensure that all necessary Python packages are installed.
+
 ---
 
-## Ensure that Ollama is running locally
+## Prerequisite: Running Ollama
+
+Ensure that you have Ollama installed and configured locally. You can download the specific model using the following command:
+
 ```bash
 ollama pull qwen3:1.7b
 ```
+
+This ensures that the Qwen 1.7B model is available for executing the pipeline.
+
+---
+
+## 💡 Contribution Guide
+
+Contributions are welcome! If you have ideas, bug reports, or suggestions for improvement, please feel free to fork the repository and submit a pull request.
+
+Steps:
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature-name`.
+3. Make and test your changes.
+4. Submit a pull request.
+
+---
+
+## ⚖️ License
+
+This project is licensed under the [MIT License](LICENSE). You are free to use, distribute, and modify this code under the terms of the license.
+
+---
+
+## 📧 Contact
+
+For any questions, clarifications, or issues, feel free to raise an issue in the repository or contact the maintainer via GitHub.
+
+---
+
+## Future Directions
+
+- Integrate additional analysis modules to further explainability.
+- Expand the diversity of profession prompts.
+- Evaluate fairness with respect to intersections of other identities (e.g., race, age).
+
+Through these advancements, this project can continue to evolve as a benchmark tool for bias analysis in natural language generation.
