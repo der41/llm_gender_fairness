@@ -14,12 +14,14 @@ The pipeline evaluates fairness and explainability by examining:
 
 ```mermaid
 flowchart TD
-    A[1. Text Generation - Qwen 1.7b / ChatGPT-5.1] --> B[2. Adjective Counts - Spacy]
-    A --> C[3. Gender Count and Flag - Fuzzy Search]
-    B --> D[4. Distance Measure Calculation - Embedding Space]
-    C --> D
-    D --> E[5. LLM-as-a-Judge - Gemini Flash 2.5]
-    
+    A[          Text Generation -        Qwen 1.7b / ChatGPT-5.1] --> B[Adjective Distribution - Spacy]
+    A --> C[Gender Frequency Flag - Fuzzy Search]
+    A --> D[Distance Measure Calculation - Embedding Space]
+    A --> E[LLM-as-a-Judge - Gemini Flash 2.5]
+    E --> F[Summary of Gender Bias Explainability]
+    B --> F
+    C --> F
+    D --> F
 ```
 
 **Generation phase (`gen_sentence.py`):**
@@ -27,11 +29,13 @@ flowchart TD
 2. Extracts **adjectives** in the responses → used to study dominant traits and build a word cloud.
 3. Detects **gender references** → counts occurrences of male / female / non-gender descriptions.
 
-**Embedding analysis (`embeddings.py`, `embedding_post_processing.ipynb`)** :
+**Embedding analysis (`embeddings.py`, `embedding_post_processing.ipynb`):**
+
 4. Computes description similarity between gendered and non-gendered responses to produce a disparity score. 
    Additionally, calculate the centroid and radius of embeddings for each gender_label subgroup and visualize the results.
 
-**Bias evaluation (`judge_llm.ipynb`)**:
+**Bias evaluation (`judge_llm.ipynb`):**
+
 5. Applies LLM-as-a-Judge to compare sentences and evaluate potential stereotypical or biased framing.
 
 ---
