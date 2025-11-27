@@ -6,9 +6,8 @@ The pipeline evaluates fairness and explainability by examining:
 - How descriptive language varies across prompts
 - How frequently gendered or neutral descriptions appear
 - What adjectives dominate across generated samples
-- Semantic differences between gendered vs. non-gendered descriptions (TBD)
-- Independent judgment via LLM-as-a-Judge (TBD)
-
+- Semantic differences between gendered vs. non-gendered descriptions 
+- Independent judgment via LLM-as-a-Judge
 ---
 
 ## 📦 Pipeline Structure
@@ -18,15 +17,15 @@ The pipeline evaluates fairness and explainability by examining:
 2. Extracts **adjectives** in the responses → used to study dominant traits and build a word cloud.
 3. Detects **gender references** → counts occurrences of male / female / non-gender descriptions.
 
-**Embedding analysis (`embeddings.py`)** *(TBD)*:
-4. Computes description similarity between gendered and non-gendered responses to produce a disparity score.
+**Embedding analysis (`embeddings.py`, `embedding_post_processing.ipynb`)** :
+4. Computes description similarity between gendered and non-gendered responses to produce a disparity score. 
+   Additionally, calculate the centroid and radius of embeddings for each gender_label subgroup and visualize the results.
 
 **Bias evaluation (`judge_llm.ipynb`)**:
 5. Applies LLM-as-a-Judge to compare sentences and evaluate potential stereotypical or biased framing.
 
 **Integration (`main.py`)** *(TBD)*:
 6. Aggregates metrics and visualizations to enhance explainability (XAI) around the likelihood of bias in generated language.
-
 ---
 
 ## 🔧 Extending the Pipeline
