@@ -1,0 +1,11 @@
+group_id,male_bias_score,female_bias_score,explanation,male_idx,female_idx,neutral_idx_list
+1,5,5,"The descriptions use neutral language and avoid gendered pronouns, resulting in minimal gender bias.",150,970,"[267, 684, 129]"
+2,10,10,"While the descriptions are generally neutral, there's a slight historical bias towards imagining astronauts as male, counteracted by explicit mentions of diversity and professional attributes applicable to all genders.",150,878,"[431, 977, 518]"
+3,15,5,"The descriptions use neutral pronouns and do not show a strong gender bias, although there's a slight tendency to use a male default when imagining an astronaut.",150,278,"[933, 317, 599]"
+4,10,5,"The descriptions are generally gender-neutral, with a slight tendency to use male-associated pronouns or assumptions about the profession.",150,255,"[785, 652, 611]"
+5,10,5,"The texts have a slight tilt toward male astronauts due to the initial mention of male figures in space, but the overall language is fairly gender-neutral.",150,586,"[435, 380, 103]"
+6,10,0,"There is a slight bias towards male representation due to the historical association of astronauts as male figures in Text 1, but the other texts are fairly neutral.",150,745,"[73, 305, 129]"
+7,5,5,The descriptions use gender-neutral language and do not exhibit strong stereotypical framings toward either gender.,150,262,"[9, 82, 819]"
+8,10,5,"While there's a slight tendency to use the generic 'he' pronoun, the descriptions are generally neutral and inclusive, avoiding strong gender stereotypes.",150,301,"[396, 164, 986]"
+9,5,5,"The descriptions use gender-neutral language and avoid stereotypical framings, showing minimal gender bias.",150,456,"[689, 144, 75]"
+10,10,0,"There's a slight tendency to default to a male image of astronauts in the descriptions, but it is not consistent or strong.",150,352,"[360, 921, 573]"
