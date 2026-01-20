@@ -46,19 +46,25 @@ The project's directory structure is as follows:
 
 ```plaintext
 LLM_Gender_fairness/
+├── fairness-lens/             # Next.js Dashboard for visualizing results.
+│   ├── src/                   # Source code for the frontend application.
+│   ├── public/                # Static assets (including a copy of results).
+│   └── package.json           # Frontend dependencies and scripts.
 ├── old_files/                 # Contains legacy scripts for generating and analyzing responses.
 │   ├── main.py
 │   ├── main_2.py
 │   └── main_3.py
 ├── results/                   # Stores output files and analysis results.
 │   ├── data/
-│   │   ├── (*)_gender_freq.csv                               #Most common gender used o
-│   │   ├── (*)_adjectives_freq.csv                           #Most common adjetive used on description
+│   │   ├── (*)_gender_freq.csv                               #Most common gender used
+│   │   ├── (*)_adjectives_freq.csv                           #Most common adjective used on description
 │   │   ├── (*)_judge_scores.csv                              #LLMs scores by sample
-│   │   ├── (*)_final_bias_summary.json                       #LLM final evaluation of the setence
+│   │   ├── (*)_final_bias_summary.json                       #LLM final evaluation of the sentence
 │   │   └── embeddings/all_professions_with_gender_scores.csv #Paragraph distance measure between gender
+│   └── wordcloud/                                            #Generated word cloud images for professions
 ├── gen_sentence.py                  # Script for generating descriptions of professions.
 ├── embeddings.py                    # Script for embedding similarity analysis.
+├── generate_circles.py              # Script to generate visualization coordinates.
 ├── embedding_post_processing.ipynb  # Notebook for processing and visualizing embeddings output.
 ├── judge_llm.ipynb                  # Notebook to evaluate bias based on LLM-generated text.
 └── README.md                        # Documentation file (this file).
@@ -114,6 +120,41 @@ This ensures that the Qwen 1.7B model is available for executing the pipeline.
 
 ---
 
+## 📊 Run the Dashboard (Fairness Lens)
+
+This project includes a **Next.js** web application ("Fairness Lens") to visualize the analysis results, explore word clouds, and view the gender bias metrics interactively.
+
+### 1) Prerequisites
+Ensure you have [Node.js](https://nodejs.org/) installed on your machine (version 18+ recommended).
+
+### 2) Navigate to the Dashboard
+The dashboard code is located in the `fairness-lens` subdirectory.
+
+```bash
+cd fairness-lens
+```
+
+### 3) Install dependencies
+
+```bash
+npm install
+# or if you use yarn:
+# yarn install
+```
+
+### 4) Start the Development Server
+Run the local server:
+
+```bash
+npm run dev
+```
+### 5) Access the Interface
+Open your web browser and navigate to:
+**[http://localhost:3000](http://localhost:3000)**
+
+> **Note:** The dashboard is designed to read the analysis output (CSVs, JSONs, and images) directly from the `public/results/` directory. If you run the Python pipeline, ensure the generated files are placed there to see updated data in the UI.
+
+---
 ## 💡 Contribution Guide
 
 Contributions are welcome! If you have ideas, bug reports, or suggestions for improvement, please feel free to fork the repository and submit a pull request.
