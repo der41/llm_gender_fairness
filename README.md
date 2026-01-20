@@ -1,6 +1,12 @@
 # Profession Description Bias Analysis
+<img width="1348" height="621" alt="image" src="https://github.com/user-attachments/assets/72886958-477a-43fa-bb43-93eb04f27847" />
 
 This project analyzes how a Large Language Model (LLM) — specifically Qwen 1.7B running locally via Ollama — describes individuals in a given profession when asked using multiple prompt variations. The goal is to evaluate potential **gender bias** and **stereotypical framing** using NLP-based explainability methods.
+
+<img width="1214" height="723" alt="image" src="https://github.com/user-attachments/assets/f04c45b7-877c-4bc5-84d2-62108fe7d240" />
+
+
+<img width="1344" height="853" alt="image" src="https://github.com/user-attachments/assets/50b260fc-a85d-4777-8674-61418a459ddd" />
 
 The pipeline evaluates fairness and explainability by examining:
 - How descriptive language varies across prompts
@@ -8,6 +14,10 @@ The pipeline evaluates fairness and explainability by examining:
 - What adjectives dominate across generated samples
 - Semantic differences between gendered vs. non-gendered descriptions 
 - Independent judgment via LLM-as-a-Judge
+<img width="1132" height="514" alt="image" src="https://github.com/user-attachments/assets/39e5abdc-4e85-4302-b6c0-cf4e8adbe3fd" />
+
+<img width="1100" height="895" alt="image" src="https://github.com/user-attachments/assets/90c0dcbe-0cc9-4f22-bdd0-7a19a0267e55" />
+
 ---
 
 ## 📦 Pipeline Structure
