@@ -20,3 +20,6 @@ MANIFEST
 
 /results/data/embeddings/all_embeddings.parquet
 /results/data/embeddings/profession_centroid_vectors.parquet
+
+.env
+.env.local
